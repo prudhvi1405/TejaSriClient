@@ -1,0 +1,158 @@
+.DashDashboard {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  padding: 30px;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+}
+
+.main-heading {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 17px;
+  color: #b0b0b0;
+  margin-bottom: 20px;
+}
+
+.columns-list {
+  margin-bottom: 20px;
+  font-size: 15px;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #cccccc;
+}
+
+.columns-list li {
+  margin: 6px 0;
+}
+
+.columns-list li strong {
+  color: #4fc3f7;
+}
+
+.input-form {
+  margin-bottom: 40px;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #2a2a3d;
+  color: #f5f5f5;
+  transition: border-color 0.3s ease;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #4fc3f7;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #4fc3f7;
+  color: #1e1e2f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #03a9f4;
+}
+
+.response-message {
+  font-size: 17px;
+  margin-top: 20px;
+  color: #81c784;
+}
+
+.error-message {
+  font-size: 17px;
+  margin-top: 20px;
+  color: #e57373;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.table-header,
+.table-cell {
+  padding: 12px;
+  border: 1px solid #2f2f3f;
+  text-align: left;
+  font-size: 15px;
+  color: #f0f0f0;
+}
+
+.table-header {
+  background-color: #2f2f3f;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.table-row:hover {
+  background-color: #2c2c3c;
+}
+
+.scrollable-tbody {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.newdashboard {
+  display: flex;
+  height: calc(100vh - 60px);
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.newdashboard-main {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+  background-color: #1e1e2f;
+}
+
+.newdashboard-main h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Styling for Demographics Chart */
+#demographics {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2b2b40;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+#demographics h2 {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

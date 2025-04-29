@@ -1,0 +1,127 @@
+/* General container settings - Dark theme with modern glass effect */
+.container {
+  margin: 40px auto;
+  font-family: 'Roboto Mono', monospace;
+  max-width: 1100px;
+  padding: 40px;
+  background: rgba(30, 30, 30, 0.9);
+  color: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Title for the table */
+.table-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #00ffc3;
+  border-left: 5px solid #00ffc3;
+  padding-left: 15px;
+  letter-spacing: 1px;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  background-color: transparent;
+}
+
+/* Table header styling */
+.table-header {
+  height: 55px;
+  text-align: left;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #444;
+  font-weight: 700;
+  color: #00ffc3;
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Table cell styling */
+.table-cell {
+  height: 60px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  padding: 16px;
+  font-size: 15px;
+  color: #e0e0e0;
+  background-color: #2a2a2a;
+  border-radius: 0 0 8px 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for rows */
+.table-row:hover {
+  background-color: #393939;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+/* Scrollable table body */
+.scrollable-tbody {
+  display: block;
+  max-height: 350px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.scrollable-tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Column width consistency */
+.scrollable-tbody td,
+.scrollable-tbody th {
+  width: auto;
+}
+
+/* Sticky header on scroll */
+thead {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Section title styling */
+.table-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #00bcd4;
+  padding-left: 12px;
+  border-left: 4px solid #00bcd4;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .table-header, .table-cell {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .table-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .scrollable-tbody {
+    max-height: 200px;
+  }
+}
